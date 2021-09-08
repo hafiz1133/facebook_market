@@ -27,8 +27,8 @@ def get_driver(fb_username, fb_password):
     time.sleep(2)
     mainlink=[]
     mainlink.append('https://www.facebook.com/marketplace/category/hobbies')
-    # mainlink.append('https://www.facebook.com/marketplace/category/vehicles')
-    # mainlink.append('https://www.facebook.com/marketplace/category/electronics')
+    mainlink.append('https://www.facebook.com/marketplace/category/vehicles')
+    mainlink.append('https://www.facebook.com/marketplace/category/electronics')
     for m_link in mainlink:
         driver.get(m_link)
         cat=driver.find_elements_by_xpath('//a[@class="oajrlxb2 tdjehn4e qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys d1544ag0 qt6c0cv9 tw6a2znq i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l bp9cbjyn e72ty7fz qlfml3jp inkptoze qmr60zad btwxx1t3 tv7at329 taijpn5t k4urcfbm"]')
